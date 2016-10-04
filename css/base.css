@@ -1,0 +1,104 @@
+/*
+* @Author: dell
+* @Date:   2016-08-09 00:40:00
+* @Last Modified by:   dell
+* @Last Modified time: 2016-08-11 01:55:59
+*/
+*,
+::before,
+::after{
+	margin:0;
+	padding: 0;
+	/*清除默认的点击高亮效果*/
+	-webkit-tap-highlight-color:transparent ;
+	/*以你的border开始计算你的宽度*/
+    -webkit-box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	font-family: "Microsoft YaHei","sans-serif";
+    color: #000;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+ul{
+	list-style: none;
+}
+input,textarea{
+ border: none;
+resize: none;/*不让伸缩*/
+outline: none;/*清除默认选中效果*/
+-webkit-appearance:none;/*清除浏览器input默认的样式*/
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+content: ".";
+display: block;	
+height: 0;
+line-height: 0;
+visibility: hidden;
+clear:both;
+}
+
+[class^="icon_"]{
+background: url("../image/sprites.png") no-repeat;
+background-size: 200px 200px;
+
+}
+.jd_topBar{
+	width: 100%;
+	height: 45px;
+    background: url("../image/header-bg.png") repeat-x;
+    background-size: 1px 44px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    z-index: 1000;
+}
+.jd_topBar h2{
+	text-align: center;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: inherit;
+	line-height: 44px;
+}
+/*返回按钮*/
+.jd_topBar .icon_back{
+	display: block;
+	height: 20px;
+	width: 20px;
+	background-position:-20px 0;
+	margin: 12px 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*搜索*/
+.jd_topBar form{
+	width: 100%;
+	height: 44px;
+	padding: 0 40px;
+}
+.jd_topBar form input{
+	width: 100%;
+	height: 32px;
+	border: 1px solid #bfbfbf;
+    border-radius: 4px;
+	margin-top: 6px;
+
+}
+/*返回菜单*/
+.jd_topBar .icon_menu{
+	display: block;
+	height: 44px;
+	width: 40px;
+	background-position:-60px 0;
+	background-clip: content-box;
+	background-origin: content-box;
+	padding: 12px 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
