@@ -1,8 +1,8 @@
 /*
 * @Author: dell
 * @Date:   2016-08-09 01:03:49
-* @Last Modified by:   dell
-* @Last Modified time: 2016-09-21 14:34:00
+* @Last Modified by:   ecl176
+* @Last Modified time: 2016-12-27 13:44:32
 */
 body{
 	background: #f5f5f5;
@@ -80,6 +80,10 @@ right: 0;
 }
 
 /*轮播图*/
+
+.bgc{
+	background-color: #fff;
+}
 .jd_banner{
 	width: 100%;
 	overflow: hidden;
