@@ -2,12 +2,12 @@
  * @Author: dell
  * @Date:   2016-08-20 11:50:57
  * @Last Modified by:   ecl176
- * @Last Modified time: 2016-12-27 14:00:34
+ * @Last Modified time: 2016-12-27 14:06:21
  */
 
 window.onload = function() {
     search();
-    //secondKill();
+    secondKill();
     scrollPic();
 };
 /*头部搜索*/
